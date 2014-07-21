@@ -2,7 +2,7 @@
 ;(function (exports) {
   'use strict';
 
-  var hri = require('./index').hri
+  var hri = exports.humanReadableIds || require('../index').hri
     , i
     ;
 

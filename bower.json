@@ -32,5 +32,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "knuth-shuffle": "~1.0.0"
+  }
 }
