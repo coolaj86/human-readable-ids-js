@@ -15,8 +15,8 @@ var fs = require('fs')
   , id
   ;
 
-animalsMaster = fs.readFileSync(animalsFile, 'utf8').split('\n');
-adjectivesMaster = fs.readFileSync(adjectivesFile, 'utf8').split('\n');
+animalsMaster = fs.readFileSync(animalsFile, 'utf8').trim().split('\n');
+adjectivesMaster = fs.readFileSync(adjectivesFile, 'utf8').trim().split('\n');
 
 function genNumbers() {
   numbers.push(0);
