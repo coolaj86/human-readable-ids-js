@@ -21,6 +21,9 @@ Currently the id space is about 100,000 ids (100 * 100 * 100).
 The goal is to have several billion possible combinations by adding
 more words as well as expanding the ids to have verbs and adverbs.
 
+For a larger address space now, consider <https://github.com/linus/greg/>,
+which also has the benefit of bi-directional conversion.
+
 Usage
 =======
 
@@ -98,6 +101,18 @@ The pre-publish script outputs the formatted javascript.
   * wednesday, hamster, ostrich (difficult to spell)
   * grey, gray, bore, boar (two ways of spelling the same word or sound)
   * prawn (not well-known)
+
+Resources
+=========
+
+Add more words and strategies from
+
+  * <http://blog.asana.com/2011/09/6-sad-squid-snuggle-softly/>
+  * The Dolch List <http://www.mrsperkins.com/dolch-words-all.html>
+  * <http://simple.wikipedia.org/wiki/Wikipedia:Basic_English_alphabetical_wordlist>
+  * <https://github.com/zacharyvoase/humanhash>
+  * <https://gist.github.com/ucnv/1121015>
+  * <https://gist.github.com/vikhyat/105610>
 
 TODO
 ====
