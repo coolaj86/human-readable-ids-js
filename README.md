@@ -21,8 +21,14 @@ Currently the id space is about 100,000 ids (100 * 100 * 100).
 The goal is to have several billion possible combinations by adding
 more words as well as expanding the ids to have verbs and adverbs.
 
-For a larger address space now, consider <https://github.com/linus/greg/>,
-which also has the benefit of bi-directional conversion.
+For a larger address space now, consider:
+
+  * Human Readable IDs for Node.js and Browser: <https://github.com/linus/greg/>
+  * Human Readable IDs for Java: <https://github.com/PerWiklander/IdentifierSentence>
+  * Human Readable IDs for Python: <https://gist.github.com/4447660>
+
+All of these also have the benefit of bi-directional conversion, but not all of them
+have words which are easy to pronounce and spell.
 
 Usage
 =======
