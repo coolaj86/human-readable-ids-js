@@ -119,6 +119,8 @@ Add more words and strategies from
   * <https://github.com/zacharyvoase/humanhash>
   * <https://gist.github.com/ucnv/1121015>
   * <https://gist.github.com/vikhyat/105610>
+  * <http://simple.wikipedia.org/wiki/Wikipedia:List_of_1000_basic_words>
+  * <http://grammar.yourdictionary.com/parts-of-speech/adverbs/list-of-100-adverbs.html>
 
 TODO
 ====
