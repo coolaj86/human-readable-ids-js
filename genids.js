@@ -5,26 +5,45 @@ var fs = require('fs')
   , shuffle = require('knuth-shuffle').knuthShuffle
   , animalsFile = path.join(__dirname, 'animals.txt')
   , adjectivesFile = path.join(__dirname, 'adjectives.txt')
-  , animals
-  , adjectives
+  , animals = []
+  , animalsMaster
+  , adjectives = []
+  , adjectivesMaster
   , numbers = []
   , i = 0
+  , k = 0
   , id
   ;
 
-animals = fs.readFileSync(animalsFile, 'utf8').split('\n');
-adjectives = fs.readFileSync(adjectivesFile, 'utf8').split('\n');
-while (i <= 101) {
-  numbers.push(i);
-  i += 1;
+animalsMaster = fs.readFileSync(animalsFile, 'utf8').split('\n');
+adjectivesMaster = fs.readFileSync(adjectivesFile, 'utf8').split('\n');
+
+function genNumbers() {
+  numbers.push(0);
+  i = 2;
+  // 1 is not plural, so we skip it
+  while (i <= 100) {
+    numbers.push(i);
+    i += 1;
+  }
+
+  return shuffle(numbers);
 }
 
-for (i = 0; i < 1000; i += 1) {
-  i += 1;
+for (k = 0; k < 100; k += 1) {
+  if (!adjectives.length) {
+    adjectives = shuffle(adjectivesMaster.slice(0));
+  }
+  if (!animals.length) {
+    animals = shuffle(animalsMaster.slice(0));
+  }
+  if (!numbers.length) {
+    numbers = genNumbers();
+  }
 
-  id = shuffle(adjectives)[0]
-    + '-' + shuffle(animals)[0]
-    + '-' + shuffle(numbers)[0]
+  id = adjectives.pop()
+    + '-' + animals.pop()
+    + '-' + numbers.pop()
     ;
 
   console.log(id);
