@@ -1,9 +1,3 @@
-NOT YET PUSHED
-====
-
-I got tired last night and didn't finish the npm publish script.
-Will do in the morning...
-
 human-readable-ids-js
 =====================
 
@@ -49,6 +43,12 @@ Please add more words that fit these criteria
 All of the words are sorted alphabetically (`sort -u`) and stored in
 the `*.txt` files.
 The pre-publish script outputs the formatted javascript.
+
+### Bad Examples
+
+  * wednesday, hamster, ostrich (difficult to spell)
+  * grey, gray, bore, boar (two ways of spelling the same word or sound)
+  * prawn (not well-known)
 
 TODO
 ====
