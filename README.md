@@ -16,7 +16,7 @@ look at twice (nor telling someone else twice).
 I should be able to shout one of these ids across the room to a co-worker
 or spouse and have them be able to enter it without any confusion.
 
-Currently the id space is about 100,000 ids (100 * 100 * 100).
+Currently the id space is about 1,000,000 ids (100 * 100 * 100).
 
 The goal is to have several billion possible combinations by adding
 more words as well as expanding the ids to have verbs and adverbs.
